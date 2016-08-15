@@ -1,10 +1,10 @@
 get 'welcome/index'
 
-root 'welcome#index'
+root 'static_pages#index'
 end
 Rails.application.routes.draw do
  
   resources :articles
  
-  root 'welcome#index'
+  root 'static_pages#index'
 end
