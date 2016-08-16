@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Nameofapp</title>
+    <title>Caring is Sharing</title>
     <%= csrf_meta_tags %>
+    <!-- Link to the bootstrap stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
 
+    <!-- Link to the bootstrap javascript file -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Meta tag which lets the app react responsively on mobile phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
   <body>
-    <nav>
-  <ul>
-    <li>Home</li>
-    <li>About</li>
-    <li>Contact</li>
-  </ul>
-</nav>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+       <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">C!S</a>
+    </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="#About">About </a></li>
+          <li><a href="#Contact">Contact </a></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
 
 <%= yield %>
 
 <footer>
-  &copy; 2016 Caring is Sharing!
+  &copy; 2016 Caring is Sharing! - 123@321.com
 </footer>
   </body>
 </html>
