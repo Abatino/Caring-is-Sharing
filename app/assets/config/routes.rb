@@ -1,4 +1,4 @@
-get 'welcome/index'
+get 'welcome#index'
 
 root 'static_pages#index'
 end
